@@ -56,7 +56,7 @@ barplot(Daily_Steps$steps,xlab="Date",ylab="Steps")
 hist(Daily_Steps$steps,xlab="Steps",breaks=5,main="Histogram of Steps per Day")
 ```
 
-![](PA1_template_files/dailystepshist-1.png)<!-- -->
+![](dailystepshist-1.png)<!-- -->
   
 ### 3. Calculate and report the mean and median of the total number of steps taken per day  
 
