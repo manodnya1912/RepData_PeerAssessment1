@@ -47,7 +47,7 @@ Daily_Steps <- ActivityData[, c(lapply(.SD, sum, na.rm = FALSE)), .SDcols = c("s
 barplot(Daily_Steps$steps,xlab="Date",ylab="Steps")  
 ```
 
-![](PA1_template_files/figure-html/dailysteps-1.png)<!-- -->
+![](PA1_template_files/dailysteps-1.png)<!-- -->
 
 ### 2. Make a histogram of the total number of steps taken each day  
 
@@ -78,7 +78,7 @@ Interval_Steps <- ActivityData[, c(lapply(.SD, mean, na.rm = TRUE)), .SDcols = c
 plot(Interval_Steps$interval,Interval_Steps$steps, type="l",xlab="Time",ylab="Average Steps")
 ```
 
-![](PA1_template_files/figure-html/intervalsteps-1.png)<!-- -->
+![](PA1_template_files/intervalsteps-1.png)<!-- -->
   
 ### 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -118,7 +118,7 @@ Interval_Steps_No_Null <- ActivityDataNoNull[, c(lapply(.SD, mean, na.rm = TRUE)
 barplot(Daily_Steps_No_Null$steps,xlab="Date",ylab="Steps")  
 ```
 
-![](PA1_template_files/figure-html/newsetnonulls-1.png)<!-- -->
+![](PA1_template_files/newsetnonulls-1.png)<!-- -->
 
 ### 4. Make a histogram of the total number of steps taken each day and Calculate and report the mean and median total number of steps taken per day. Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?  
 
